@@ -195,7 +195,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_30NjIDxLEemsibhj7Nr4pA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_dbKpcDxkEemsibhj7Nr4pA-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -206,8 +206,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="CappedOut" name="CappedOut">
       <column comment="" key="false" length="31" name="Name" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Number" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Street" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="Address" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="City" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="State" nullable="true" originalLength="2" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -216,8 +215,7 @@
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="CappedOut" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.First+&quot; &quot;+row1.Last " name="Name" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Number " name="Number" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Street " name="Street" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.Number  row1.Street " name="Address" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.City " name="City" nullable="true" type="id_String"/>
         <mapperTableEntries expression="StringHandling.UPCASE(row1.State) " name="State" nullable="true" type="id_String"/>
       </outputTables>
@@ -235,7 +233,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Suhita/Documents/Talend DI Basics/DIBasics/CappedOut&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Suhita/Documents/Talend DI Basics/DIBasics/CappedOut(1)&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -263,8 +261,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="CappedOut" name="tFileOutputDelimited_1">
       <column comment="" key="false" length="31" name="Name" nullable="true" originalLength="15" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Number" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Street" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="Address" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="City" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="State" nullable="true" originalLength="2" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -282,13 +279,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1f45e9a5-dbd9-4c66-9f33-b04297eca086"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WxlVNaDvj6QkN4n9T8nvYv3yBjbHynzILI0SIls8bO+5Hv9OSKY1/qApCJzQ1RcjZWfvUO1mibwL
-2FWdFvr6DA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a35d6dce-b056-4f84-a833-8c400e2601af"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o1qTKH8pHdlux+yOJRRVHaaf3OEPxKwr4bgJz6sQY06KNW7Jpd2iNVMS1tUjnXZEDBzXfwR0nKGG
-t2hBAOTM3g==</DigestValue></Reference></SignedInfo><SignatureValue>OuekFwy6DtkGbJNJd5/ab3sHza9iNl+HcSwUWGMCQDjDkgfTeT3PinmPT01bmgrDHKSttnDFp5at
-L/1n2CLUqL4fHmpVj7tIlsLnPKHeklftVAQBGUkZoRge8PjZF+ctRbHjIWIjxl1ygIk2u6C06RJX
-qPn5nmmRA0L45by1/oIs2nsVOi/zOr3fHhMTyZl7MaKKEyr1bUmjH5SqWz6Pyb1IBUtWJQRDc/mW
-HJ8euWyEYZ+RVivAYElORKje4QOgX9ew72Wxf0HSUd81CNEsBq8FlXIWFMeQMCWPnD/tvCnbagEG
-4RNr+H9XJEZXaJmBMxDrKGLAF/60Ip36lKp+4w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e69a8768-482b-4f19-99c3-ac01ec298be9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BIBCej1Hm1G0tahjlOQFXQ1l9c77yChuwHg3Rw0f9xSxBPy4BC36At76uXjre0aErkc/qnyGjcPh
+iNfU9wqGbw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3636418e-60d2-45cd-bff6-06ac7b817c14"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9pst6rMGf2Mm6Lib6O4mfkLPtDGCcOawCOawUwuQzBiUg4dO/NGGZtOvam0xQldqnd+s9HW11w25
+K7AufiN/dw==</DigestValue></Reference></SignedInfo><SignatureValue>RphLmkzImb1KGYXH+xASISRg1r7AcB3BgZICo1TFcDdPFj4IlYlKWbgn2CgORt9I+cmypoXhnn+r
+enbTesRTCT+nnlf7HirV+rm5e9BoF2kI6B0DRcd4GaH7DnpEjByR0Uuu4yOcAjlH2NsQiKO+tiJT
+rfMfbyn6UNl6sN2981qDQCZB9RzGhCg7t3nwcEtc49FULV0ucCjVoF4b2YuFiLb7+4jAr43MBdJw
+TL/5Zb1yH4PBrSMgfhvoU60+MOMMR1jPXcCEAXS7ogDKlH6wNMG9thdpCTdfz7mZ9Rn67Hb9etze
+pAIxAWb1wUGJAUHvjF7tYtnM5Jw/EEYKmTjs7A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -312,4 +309,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a35d6dce-b056-4f84-a833-8c400e2601af" Target="#_1f45e9a5-dbd9-4c66-9f33-b04297eca086"><Timestamp>2019-03-01 20:56:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3636418e-60d2-45cd-bff6-06ac7b817c14" Target="#_e69a8768-482b-4f19-99c3-ac01ec298be9"><Timestamp>2019-03-01 20:59:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

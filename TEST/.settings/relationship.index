@@ -76,6 +76,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_krjEoD7GEemanr_SUso4Pw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
     "id" : "DQTechnical",
     "version" : "Latest",
     "type" : "routine"
@@ -139,6 +143,10 @@
     "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
+  }, {
+    "id" : "_krjEoD7GEemanr_SUso4Pw - StateCodesSchema",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {

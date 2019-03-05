@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="Output Directory" name="OutputDir" prompt="OutputDir?" promptNeeded="false" type="id_String" value="&quot;C:\Users\Suhita\Documents\Talend\Exercises\&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Product">
+    <contextParameter comment="Output Directory" name="OutputDir" prompt="OutputDir?" promptNeeded="false" type="id_String" value="&quot;C:\Users\Suhita\Documents\Talend\Exercises\Production\&quot;"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
@@ -195,7 +200,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_30NjIDxLEemsibhj7Nr4pA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_1TyeoD-JEempD4CgFthr6A-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -212,7 +217,7 @@
       <column comment="" key="false" length="2" name="State" nullable="true" originalLength="2" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="CappedOut" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.First+&quot; &quot;+row1.Last " name="Name" nullable="true" type="id_String"/>
@@ -235,7 +240,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Suhita/Documents/Talend DI Basics/DIBasics/CappedOut&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.OutputDir + &quot;CappedOut&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
@@ -282,13 +287,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_51d1d85f-fc11-4872-a152-b3d5d599973a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WxlVNaDvj6QkN4n9T8nvYv3yBjbHynzILI0SIls8bO+5Hv9OSKY1/qApCJzQ1RcjZWfvUO1mibwL
-2FWdFvr6DA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d0addb94-cb1c-46f2-bd2e-8b8cb53f7cd9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mskqXghyIZTRZb58DMKxDy7GKEGSHR927foPvkAOU7PAVo8OnRkQWwCa8Uy6K7zq9nt6uQotxd92
-buk2MflI3w==</DigestValue></Reference></SignedInfo><SignatureValue>lO8tCi9aPEXoGEVvnBlgUdUNTeJ2W7OBjS2MP+IQ1qgl2+JIQjYQc1B0vYpSGPgavP4UNAc3/ws5
-WgbsiThxBA/k1+yWdfUxv2PcP+H4sI69OMNwhJQgZ2xcBcUzA88GDajPxO5BV1BKT6cHpkNovmXx
-VBnLlU24o3vTpm0mg+soJuwdoCE7xieeskga+B8EouSPw+9m4mEXrikkLX06LXVL9nDdsODo0HlI
-HY1ubFRXrzffofCWHf35Vvoi8RtVbMd6B1ZshcmhkHaUqYnb9BXbGgRJWTGdc8CugABVGCQCq5Lv
-OHckPJVVSRmGr9TwPejmOVoCHMfCuLIG80PwqA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_320b97d1-907e-4637-8a0c-8427a47cf7d3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MXC7hqZGank527lz+ckUS68bgK0HwpipmdIMa+AZrchZ51jVivvExlhxwQHu/1KAT7Uh+PZxoyol
+VzAYGRjXjQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cc40cc5b-cc13-46e3-9e22-51dfd41afddb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>72jc3v5FRAbSr7Ze3+mLl0SRwFZfMLqN0Ek9l1w7AIJcxMOuot/83391RQBhMJYwZq7UErHZCXCz
+xMleJm161Q==</DigestValue></Reference></SignedInfo><SignatureValue>i8RfjY7eDzHF89jYtduJF0sJecxSYC/vWm4QpKAANOzChhM7EMOUmH+3TiXZi1mx9S/Ro5A5rR85
+M2/rQgF4zB1GMbB8nMX87lpDClJ+sRIVcaZ8gAew1pss/4p5LQPs7evaPSQIxKfVp3WXVeyr6tzV
+xKp64ZNFu3XP2ZEPxfKtAfV2/1mxtjwdp+GS4TqOVA8gMdveaGE8nlQKsEHo8+sVwtaZRurj6Nx+
+z7MHltGogQ9BIx+XCJV0RfP0ayyza+Zp6OJ9JUHFcuXa37w7avBZn8gbsjun9L9UWRMICxc8i1jM
+946NZOIDlJCeZ8y+4ub81TFsQWBbEa0/tj9KgA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -312,4 +317,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d0addb94-cb1c-46f2-bd2e-8b8cb53f7cd9" Target="#_51d1d85f-fc11-4872-a152-b3d5d599973a"><Timestamp>2019-03-05 21:01:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cc40cc5b-cc13-46e3-9e22-51dfd41afddb" Target="#_320b97d1-907e-4637-8a0c-8427a47cf7d3"><Timestamp>2019-03-05 21:35:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
